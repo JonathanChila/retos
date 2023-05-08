@@ -1,0 +1,154 @@
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Verdana", sans-serif;
+    color: white;
+  } 
+
+  button, form input[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  input[type=text], input[type=date] {
+    width: 60%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  select {
+    width: 400px;
+    padding: 8px 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    background-color: #fff;
+    box-shadow: none;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  select:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  option {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333ad;
+    background-color: #fff;
+  }
+  
+  option:hover {
+    background-color: #896666;
+  }
+  
+
+  a {
+    color: #0066cc; 
+    text-decoration: none; 
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #003366;
+  }
+
+  body {
+    background-image: url("https://i.pinimg.com/564x/15/27/9c/15279c92c995d0a153a4e3b6f5887b94.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 45%;
+  }
+
+  form {
+    background: linear-gradient(to bottom, #a9a8af, #afe5b6);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: fit-content;    
+    width: auto;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form input[type="password"],
+  form input[type="date"],
+  form textarea {
+    display: block;
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #333;
+  }
+
+  label {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .button_form {
+    display: block;margin: 0 auto;
+  }
+
+  .reports{
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #a9a8af, #afe5b6);
+    border-radius: 10px;
+    padding: 20px;
+    max-width:fit-content;    
+    width: auto;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  #link_reservations_date {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #333;
+    background-color: #f2f2f2;
+    border-radius: 0.5em;
+    transition: background-color 0.2s ease-in-out;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+
+  #link_reservations_date:hover {
+    background: linear-gradient(to bottom, #a9a8af, #b0f787);
+  }
+
+  h2 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .divInside{
+    max-width:fit-content;    
+    width: auto;
+    margin: 0 auto;
+  }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
+    <link rel="stylesheet" type="text/css" href="./css/header_footer.css">
+    <script src="./js/clients.js"></script>
+    <title>Registrar Cliente</title>
+</head>
+<body>
+    <header>
+        <h1>Registrar Cliente</h1>
+    </header>
+
+    <main>
+        <div>
+            <button onclick="location.href=sessionStorage.getItem('thisUrl')">Regresar</button><br><br>
+        </div>
+        <form>
+            <label for="name">Nombre del Cliente: </label>
+            <input type="text" id="name" placeholder="Nombre" autocomplete="off">
+            <label for="ema">Correo electrónico: </label>
+            <input type="email" id="email" placeholder="Correo electrónico" autocomplete="off">
+            <label for="password">Contraseña: </label>
+            <input type="password" id="password" placeholder="Contraseña">
+            <label for="age">Edad: </label>
+            <input type="number" id="age" placeholder="Edad">
+            <button onclick="saveClient()" class="button_form"> Registrar Cliente </button>
+        </form>
+    </main>
+
+    <footer>
+		<p>Todos a la U: Universidad Sergio Arboleda</p>
+		<p>&copy; 2023 Todos los derechos reservados</p>
+	</footer>
+</body>
+</html>

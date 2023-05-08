@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/tablas.css" />
+    <link rel="stylesheet" type="text/css" href="./css/general.css"><link rel="stylesheet" type="text/css" href="./css/header_footer.css">
+    <script src="./js/messages.js"></script>
+    <script src="./js/information.js"></script>
+    <title>Consultar Mensajes</title>
+</head>
+<body onload="getClients();getCars();getMessages();">
+    <header>
+        <h1>Consultar Mensajes</h1>
+    </header>
+
+    <main>
+        <button onclick="location.href='./menuMain.html'">Regresar</button><br><br>  
+        <div class="reports">
+            <div class="divInside">
+                <label>Elija un Cliente: </label><br>
+                <select id="clients_selector"></select><br><br>
+                <label>Elija un Vehiculo:</label><br>
+                <select id="cars_selector"></select><br><br>
+                <button onclick="showMessages(dataTemp)" class="button_form">Filtrar</button>
+            </div>
+        </div><br>
+        
+        <div>
+            <table id="messages_table"></table>
+        </div>
+    </main>
+
+    <footer>
+		<p>Todos a la U: Universidad Sergio Arboleda</p>
+		<p>&copy; 2023 Todos los derechos reservados</p>
+	</footer>
+</body>
+</html>

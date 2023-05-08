@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
+    <link rel="stylesheet" type="text/css" href="./css/header_footer.css">
+    <script src="./js/reservations.js"></script>
+    <title>Registrar Reserva</title>
+</head>
+<body onload = "getClients();getCars()">
+    <header>
+        <h1>Registrar Reserva</h1>
+    </header>
+
+    <main>
+        <div>
+            <button onclick="location.href='./menuMain.html'">Regresar</button><br><br>
+        </div>
+        <div>
+            <form>
+                <label for="clients_selector">Cliente:</label><br>
+                <select id="clients_selector"></select><br><br>
+                <label for="cars_selector">Vehiculo:</label><br>
+                <select id="cars_selector"></select><br><br>
+                <label for="startDate">Fecha de Reservación:</label><br>
+                <input type="date" id="startDate">
+                <label for="devolutionDate">Fecha de Devolucion del vehiculo:</label>
+                <input type="date" id="devolutionDate"><br><br>
+                <button onclick="saveReservation()" class="button_form"> Generar Reserva </button>
+            </form><br>
+        </div>
+        <div>
+        </div>
+    </main>
+
+    <footer>
+		<p>Todos a la U: Universidad Sergio Arboleda</p>
+		<p>&copy; 2023 Todos los derechos reservados</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+ul {
+    list-style-type: disc;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  li a {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #333;
+    background-color: #f2f2f2;
+    border-radius: 0.5em;
+    transition: background-color 0.2s ease-in-out;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  li a:hover {
+    background: linear-gradient(to bottom, #a9a8af, #b0f787);
+  }
+
+  #optionsMain {
+    width: 40%;
+  }
+
+  li {
+    padding-left: 20px;
+  }

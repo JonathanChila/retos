@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
+    <link rel="stylesheet" type="text/css" href="./css/header_footer.css">
+    <script src="./js/logUsers.js"></script>
+    <title></title>
+</head>
+<body>
+    <header>
+		<h1>RENTA CAR</h1>
+	</header><br>
+
+    <main>
+        <div class="reports">
+            <form>
+                <label for="email">Correo electrónico: </label>
+                <input type="email" id="email" placeholder="Correo electrónico" autocomplete="off">
+                <label for="password">Contraseña: </label>
+                <input type="password" id="password" placeholder="Contraseña">
+            </form><br>
+    
+            <div class="divInside">
+                <button onclick="validateUser()"> INGRESAR </button>
+                <button onclick="registerUser()"> REGISTRAR </button>
+            </div> <br>
+            <div class="divInside">
+                <a href="recoverPassword.html">¿Olvidó su contraseña?</a>
+            </div><br>
+            <div class="divInside">
+                <a href="howToLogin.html">¿CÓMO INGRESAR?</a>
+            </div>
+        </div><br>
+        <button onclick="location.href='./index.html'" class="button_form">SALIR DEL RETO</button>
+        
+    </main><br>
+    
+    <footer>
+		<p>Todos a la U: Universidad Sergio Arboleda</p>
+		<p>&copy; 2023 Todos los derechos reservados</p>
+	</footer>
+
+
+</body>
+</html>

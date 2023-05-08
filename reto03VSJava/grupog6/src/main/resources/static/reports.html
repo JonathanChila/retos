@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/tablas.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" type="text/css" href="./css/header_footer.css">
+    <script src="./js/reports.js"></script>
+    <title>REPORTES</title>
+</head>
+<body onload="topClients();reservationStatus();">
+    <header>
+        <h1>REPORTES</h1>
+    </header>
+
+    <main>
+        <div>
+            <button onclick="location.href='./menuMain.html'">Regresar</button><br><br>
+        </div>
+        
+        <div class="reports">
+            <h2>CONTEO DE RESERVAS ENTRE FECHAS</h2>
+        <form>
+            <label for="startDate">Fecha de Inicio: </label>
+            <input type="date" id="startDate">
+            <label for="endDate">Fecha de Devolucion: </label>
+            <input type="date" id="endDate">
+        </form><br>
+        <button onclick="reservationDates()" class="button_form">CALCULAR</button><br><br>
+        <table>
+            <thead>
+                <tr><th>Total de Reservas</th></tr>
+            </thead>
+            <tbody>
+                <tr><td id="report-dates" class="centrar">0</td></tr>
+            </tbody>
+        </table><br>
+        <a href="#" onclick="showReservationsDates();" id="link_reservations_date">Ver las reservas entre las fechas seleccionadas</a><br>
+        <table id="table_reservations_dates" style="display: none;"></table>
+    </div><br>
+    
+    
+    <div class="reports">
+        <h2>RESERVAS COMPLETAS VS CANCELADAS</h2>
+        <table id="report-status">
+            <thead>
+                <tr><th>COMPLETAS</th><th>CANCELADAS</th></tr>
+            </thead>
+            <tbody>
+                <tr><td id="completed" class="centrar"></td><td id="cancelled" class="centrar"></td></tr>
+            </tbody>
+        </table>
+    </div><br>
+    
+    <div class="reports">
+        <h2>TOP DE CLIENTES</h2>
+        <table id="report-clients"></table>
+    </div>
+</main>
+    
+<footer>
+    <p>Todos a la U: Universidad Sergio Arboleda</p>
+    <p>&copy; 2023 Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

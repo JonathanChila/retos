@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/tablas.css" />
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
+    <link rel="stylesheet" type="text/css" href="./css/header_footer.css">
+    <script src="./js/reservations.js"></script>
+    <script src="./js/information.js"></script>
+    <title>Consultar Reservaciones</title>
+</head>
+<body onload="getClients();getCars();getReservations();">
+    <header>
+        <h1>Consultar Reservaciones</h1>
+    </header>
+
+    <main>
+        <button onclick="location.href='./menuMain.html'">Regresar</button> <br><br>
+    
+        <div class="reports">
+            <div class="divInside">
+                <label for="clients_selector">Elija un Cliente:</label><br>
+                <select id="clients_selector"></select><br><br>
+                <label for="cars_selector">Elija un Vehiculo:</label><br>
+                <select id="cars_selector"></select><br><br>
+                <button onclick="showReservations(dataTemp)" class="button_form">Filtrar</button>
+            </div>
+        </div><br>
+    
+        <div>
+            <table id="reservations_table"></table>
+         </div>
+    </main><br><br>
+
+    <footer>
+		<p>Todos a la U: Universidad Sergio Arboleda</p>
+		<p>&copy; 2023 Todos los derechos reservados</p>
+	</footer>
+</body>
+</html>

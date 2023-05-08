@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
+    <link rel="stylesheet" type="text/css" href="./css/header_footer.css">
+    <script src="./js/cars.js"></script>
+    <title>Registrar Vehiculo</title>
+</head>
+<body onload = "getGamas()">
+    <header>
+        <h1>Registrar Vehiculo</h1>
+    </header>
+
+    <main>
+        <div>
+            <button onclick="location.href='./menuMain.html'">Regresar</button><br><br>
+        </div>
+        <form>
+            <label for="name">Nombre del Vehículo: </label>
+            <input type="text" id="name" placeholder="Nombre del Vehiculo" autocomplete="off">
+            <label for="brand">Marca del Vehículo: </label>
+            <input type="text" id="brand" placeholder="Marca">
+            <label for="yearCar">Año de Fabricación: </label>
+            <input type="number" id="yearCar" placeholder="Año-Modelo">
+            <label for="description">Descripción del vehículo: </label>
+            <textarea id="description" placeholder="Descripción del Vehículo" cols="40" rows="4"></textarea>
+            <label for="gamas_selector">Elija una categoria: </label><br>
+            <select id="gamas_selector"></select><br><br>
+            <button onclick="saveCar()" class="button_form"> Agregar Vehiculo </button>
+        </form>
+    </main>
+    <footer>
+		<p>Todos a la U: Universidad Sergio Arboleda</p>
+		<p>&copy; 2023 Todos los derechos reservados</p>
+	</footer>
+</body>
+</html>

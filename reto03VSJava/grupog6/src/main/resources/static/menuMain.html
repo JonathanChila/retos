@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
+    <link rel="stylesheet" type="text/css" href="./css/mainMenu.css">
+    <link rel="stylesheet" type="text/css" href="./css/header_footer.css">
+    <script src="./js/menuMain.js"></script>
+    <title>ADMINISTRADOR</title>
+</head>
+<body onload="loadProfile()">
+    <header>
+        <h1>RENTA CAR</h1>
+    </header>
+
+    <main>
+        <h2 id="welcome"></h2>
+        <button onclick="logOut()">LOG OUT</button><br><br>
+        <div id="optionsMain"> 
+            <nav>
+    
+                <ul>
+                    <li>
+                        <a href="#" onclick="showOptions('opt_message')">MENSAJES</a>
+                        <ul id="opt_message" class="options">
+                            <li><a href="messageRegister.html">REGISTRAR UN MENSAJE NUEVO</a></li>
+                            <li><a href="messageCheck.html">CONSULTAR TODOS LOS MENSAJES</a></li>
+                        </ul>
+                    </li><br>
+                    <li id="link_reservations">
+                        <a href="#" onclick="showOptions('opt_reservation')">RESERVACIONES</a>
+                        <ul id="opt_reservation" class="options">
+                            <li><a href="reservationRegister.html">REGISTRAR UNA RESERVACION NUEVA</a></li>
+                            <li><a href="reservationCheck.html">CONSULTAR TODAS LAS RESERVACIONES</a></li>
+                        </ul>
+                    </li><br>
+                    <li class="disableForClients">
+                        <a href="#" onclick="showOptions('opt_gama')">GAMA</a>
+                        <ul id="opt_gama" class="options">
+                            <li><a href="gamaRegister.html">REGISTRAR UNA GAMA NUEVA</a></li>
+                            <li><a href="gamaCheck.html">CONSULTAR TODAS LAS GAMAS DISPONIBLES</a></li>
+                        </ul>
+                    </li><br>
+                    <li class="disableForClients">
+                        <a href="#" onclick="showOptions('opt_car')">VEHICULOS</a>
+                        <ul id="opt_car" class="options">
+                            <li><a href="carRegister.html">REGISTRAR UN VEHICULO NUEVO</a></li>
+                            <li><a href="carCheck.html">CONSULTAR TODOS LAS VEHICULOS DISPONIBLES</a></li>
+                        </ul>
+                    </li><br>
+                    <li class="disableForClients">
+                        <a href="#" onclick="showOptions('opt_client')">CLIENTES</a>
+                        <ul id="opt_client" class="options">
+                            <li><a href="clientRegister.html">REGISTRAR UN CLIENTE NUEVO</a></li>
+                            <li><a href="clientCheck.html">CONSULTAR TODAS LOS CLIENTES</a></li>
+                        </ul>
+                    </li><br>
+                    <li class="disableForClients">
+                        <a href="#" onclick="showOptions('opt_admin')">ADMINISTRADORES</a>
+                        <ul id="opt_admin" class="options">
+                            <li><a href="adminRegister.html">REGISTRAR UN ADMINISTRADOR NUEVO</a></li>
+                            <li><a href="adminCheck.html">CONSULTAR TODOS LOS ADMINISTRADORES</a></li>
+                        </ul>
+                    </li><br>
+                    <li class="disableForClients">
+                        <a href="reports.html" onclick="showOptions('opt_report')">REPORTES</a>
+                    </li><br>
+                </ul>
+            </nav>   
+        </div>
+    </main><br><br><br>
+
+    <footer>
+		<p>Todos a la U: Universidad Sergio Arboleda</p>
+		<p>&copy; 2023 Todos los derechos reservados</p>
+	</footer>
+</body>
+</html>
