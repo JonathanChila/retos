@@ -1,6 +1,6 @@
-const URL_MESSAGE = "http://141.148.20.35:8080/api/Message/"
-const URL_CAR = "http://141.148.20.35:8080/api/Car/"
-const URL_CLIENT = "http://141.148.20.35:8080/api/Client/"
+const URL_MESSAGE = "http://localhost:8080/api/Message/"
+const URL_CAR = "http://localhost:8080/api/Car/"
+const URL_CLIENT = "http://localhost:8080/api/Client/"
 const tHeaders = ['CLIENTE','VEHICULO','MENSAJE'];
 var dataTemp;
 

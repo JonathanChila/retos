@@ -1,6 +1,6 @@
-const URL_RESERVATION = "http://141.148.20.35:8080/api/Reservation/";
-const URL_CAR = "http://141.148.20.35:8080/api/Car/";
-const URL_CLIENT = "http://141.148.20.35:8080/api/Client/";
+const URL_RESERVATION = "http://localhost:8080/api/Reservation/";
+const URL_CAR = "http://localhost:8080/api/Car/";
+const URL_CLIENT = "http://localhost:8080/api/Client/";
 const tHeaders = ["ID","ID CLIENTE","CLIENTE","CORREO", "VEHICULO","CALIFICIÓN","STATUS"];
 var dataTemp;
 

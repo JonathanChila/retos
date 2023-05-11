@@ -1,4 +1,4 @@
-const URL_INFO = 'http://141.148.20.35:8080/api/'
+const URL_INFO = 'http://localhost:8080/api/'
 var arrayData = {};
 var dataTemp;
 

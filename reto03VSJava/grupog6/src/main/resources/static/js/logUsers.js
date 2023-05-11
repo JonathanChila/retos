@@ -1,4 +1,4 @@
-const URL_LOGIN = "http://141.148.20.35:8080/api/login";
+const URL_LOGIN = "http://localhost:8080/api/login";
 
 function validateUser() {
     let user = {

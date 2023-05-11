@@ -1,5 +1,5 @@
-const URL_CAR = "http://141.148.20.35:8080/api/Car/";
-const URL_GAMA = "http://141.148.20.35:8080/api/Gama/";
+const URL_CAR = "http://localhost:8080/api/Car/";
+const URL_GAMA = "http://localhost:8080/api/Gama/";
 const tHeaders = ['NOMBRE', 'MARCA', 'MODELO', 'DESCRIPCIÓN', 'CATEGORIA' ];
 
 function getCars() {
