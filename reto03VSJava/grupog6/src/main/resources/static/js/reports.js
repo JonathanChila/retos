@@ -1,5 +1,5 @@
-URL_RESERVATION = 'http://localhost:8080/api/Reservation/';
-URL_CLIENT = 'http://localhost:8080/api/Client/';
+URL_RESERVATION = 'http://141.148.20.35:8080/api/Reservation/';
+URL_CLIENT = 'http://141.148.20.35:8080/api/Client/';
 const tHeadersReservation = ["ID","F. INICIO","F. FIN","ID CLIENTE","CLIENTE", "VEHICULO","CALIFICIÓN"];
 const tHeadersClientsTop = ["PUESTO N°","ID", "NOMBRE","TOTAL RESERVAS"];
 

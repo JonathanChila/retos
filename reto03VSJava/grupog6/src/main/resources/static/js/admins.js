@@ -1,4 +1,4 @@
-const URL_ADMIN = 'http://localhost:8080/api/Admin/'
+const URL_ADMIN = 'http://141.148.20.35:8080/api/Admin/'
 const tHeaders = ['NOMBRE', 'CORREO'];
 
 function getAdmins() {
