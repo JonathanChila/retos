@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.reto03.grupog6.Entities.Car;
 import com.reto03.grupog6.Services.CarService;
 
+// @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
 @RestController
 @RequestMapping("/api/Car")
 public class CarController {
@@ -32,6 +33,7 @@ public class CarController {
     }
     
     @PostMapping("/save")
+    // @ResponseStatus(HttpStatus.CREATED)
     public Car addCar(@RequestBody Car car) {
         return carService.addCar(car);
     }
