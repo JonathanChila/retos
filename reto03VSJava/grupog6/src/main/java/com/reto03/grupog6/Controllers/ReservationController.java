@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.reto03.grupog6.DTO.ClientsReport;
 import com.reto03.grupog6.DTO.StatusReport;
@@ -60,6 +62,7 @@ public class ReservationController {
     
 
     @PostMapping("/save")
+    @ResponseStatus(HttpStatus.CREATED)
     public Reservation addReservation(@RequestBody Reservation reservation) {
         return reservationService.addReservation(reservation);
     }

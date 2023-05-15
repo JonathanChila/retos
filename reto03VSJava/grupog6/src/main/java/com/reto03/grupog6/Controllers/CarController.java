@@ -3,6 +3,8 @@ package com.reto03.grupog6.Controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -33,9 +35,10 @@ public class CarController {
     }
     
     @PostMapping("/save")
-    // @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.CREATED)
     public Car addCar(@RequestBody Car car) {
         return carService.addCar(car);
+        // return ResponseEntity.status(HttpStatus.CREATED).body(carService.addCar(car));
     }
 
     @PutMapping("/update")

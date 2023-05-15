@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.reto03.grupog6.Entities.Gama;
 import com.reto03.grupog6.Services.GamaService;
@@ -32,6 +34,7 @@ public class GamaController {
     }
     
     @PostMapping("/save")
+    @ResponseStatus(HttpStatus.CREATED)
     public Gama addGama(@RequestBody Gama gama) {
         return gamaService.addGama(gama);
     }
