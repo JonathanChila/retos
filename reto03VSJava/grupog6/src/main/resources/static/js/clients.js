@@ -1,4 +1,4 @@
-const URL_CLIENT = 'http://localhost:8080/api/Client/'
+const URL_CLIENT = 'http://150.136.169.53:8080/api/Client/'
 const tHeaders = ['NOMBRE', 'CORREO', 'EDAD'];
 
 function getClients() {

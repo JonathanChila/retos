@@ -11,5 +11,4 @@ public class Grupog6Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Grupog6Application.class, args);
 	}
-
 }

@@ -1,4 +1,4 @@
-const URL_GAMA = "http://localhost:8080/api/Gama/";
+const URL_GAMA = "http://150.136.169.53:8080/api/Gama/";
 const tHeaders = ['NOMBRE', 'DESCRIPCIÓN'];
 
 function getGamas() {
