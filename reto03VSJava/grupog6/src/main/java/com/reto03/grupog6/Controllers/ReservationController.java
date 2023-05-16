@@ -68,7 +68,7 @@ public class ReservationController {
     }
 
     @PutMapping("/update")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.CREATED)
     public Reservation updateReservation(@RequestBody Reservation reservation) {
         return reservationService.udpReservation(reservation);
     }

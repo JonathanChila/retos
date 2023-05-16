@@ -40,7 +40,7 @@ public class GamaController {
     }
 
     @PutMapping("/update")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.CREATED)
     public Gama updateGama(@RequestBody Gama gama) {
         return gamaService.udpGama(gama);
     }

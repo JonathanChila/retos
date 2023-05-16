@@ -40,7 +40,7 @@ public class ClientController {
     }
 
     @PutMapping("/update")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.CREATED)
     public Client updateClient(@RequestBody Client client) {
         return clientService.udpClient(client);
     }

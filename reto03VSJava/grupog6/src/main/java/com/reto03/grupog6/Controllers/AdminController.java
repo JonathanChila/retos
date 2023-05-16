@@ -40,7 +40,7 @@ public class AdminController {
     }
 
     @PutMapping("/update")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.CREATED)
     public Admin updateAdmin(@RequestBody Admin admin) {
         return adminService.udpAdmin(admin);
     }

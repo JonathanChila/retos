@@ -42,7 +42,7 @@ public class CarController {
     }
 
     @PutMapping("/update")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.CREATED)
     public Car updateCar(@RequestBody Car car) {
         return carService.udpCar(car);
     }

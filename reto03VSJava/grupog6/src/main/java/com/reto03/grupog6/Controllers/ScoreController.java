@@ -40,7 +40,7 @@ public class ScoreController {
     }
 
     @PutMapping("/update")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.CREATED)
     public Score updateScore(@RequestBody Score score) {
         return scoreService.udpScore(score);
     }

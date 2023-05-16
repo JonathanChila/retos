@@ -40,7 +40,7 @@ public class MessageController {
     }
 
     @PutMapping("/update")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.CREATED)
     public Message updateMessage(@RequestBody Message message) {
         return messageService.udpMessage(message);
     }
