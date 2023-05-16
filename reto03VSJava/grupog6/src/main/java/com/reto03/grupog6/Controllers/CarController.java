@@ -42,11 +42,13 @@ public class CarController {
     }
 
     @PutMapping("/update")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public Car updateCar(@RequestBody Car car) {
         return carService.udpCar(car);
     }
 
     @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteCar(@PathVariable Integer id) {
         carService.delCar(id);
     }

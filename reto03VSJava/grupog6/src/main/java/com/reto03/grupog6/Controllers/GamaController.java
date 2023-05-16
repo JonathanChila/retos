@@ -40,11 +40,13 @@ public class GamaController {
     }
 
     @PutMapping("/update")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public Gama updateGama(@RequestBody Gama gama) {
         return gamaService.udpGama(gama);
     }
 
     @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteGama(@PathVariable Integer id) {
         gamaService.delGama(id);
     }

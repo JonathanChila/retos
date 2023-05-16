@@ -40,11 +40,13 @@ public class MessageController {
     }
 
     @PutMapping("/update")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public Message updateMessage(@RequestBody Message message) {
         return messageService.udpMessage(message);
     }
 
     @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteMessage(@PathVariable Integer id) {
         messageService.delMessage(id);
     }

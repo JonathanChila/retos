@@ -40,11 +40,13 @@ public class AdminController {
     }
 
     @PutMapping("/update")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public Admin updateAdmin(@RequestBody Admin admin) {
         return adminService.udpAdmin(admin);
     }
 
     @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteAdmin(@PathVariable Integer id) {
         adminService.delAdmin(id);
     }

@@ -40,11 +40,13 @@ public class ScoreController {
     }
 
     @PutMapping("/update")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public Score updateScore(@RequestBody Score score) {
         return scoreService.udpScore(score);
     }
 
     @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteScore(@PathVariable Integer id) {
         scoreService.delScore(id);
     }
